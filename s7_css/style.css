@@ -1,0 +1,25 @@
+body{
+    background: rgb(227, 250, 231);
+    color:rgb(17, 61, 17);
+    font-family: Arial, sans-serif;
+}
+
+h1, h2{
+   text-align: center; 
+   background:rgb(26, 170, 26); 
+    color: white;
+    padding: 10px;
+}
+p{
+    border: 2px solid green;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+}
+p::first-letter{
+  color: purple;  
+  font-size: 70px;
+  float: left;
+  margin-right: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
