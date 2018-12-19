@@ -19,7 +19,14 @@ p{
 p::first-letter{
   color: purple;  
   font-size: 70px;
-  float: left;
+  float: l
+  eft;
   margin-right: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img{
+    float: left;
+    margin-right: 20px;
+border-radius: 50%;
 }
