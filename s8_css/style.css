@@ -1,0 +1,56 @@
+body{
+   
+    background: url(images/back.jpg) no-repeat fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;}
+img{
+    width: 100%;
+
+}
+p img{
+    width: 300px;
+    float: left;
+    margin-right: 16px;
+}
+h1, h2{
+    text-align: center;
+    background:#1e88e5 ;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'ZCOOL XiaoWei', 'sans-serif';
+}
+p{
+text-align: justify;
+text-indent: 30px;
+padding: 16px;
+border: 2px #0d47a1 solid;}
+p:hover{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+
+}
+h1 + p{
+    background: #ffd500b2 ;
+} 
+
+thead td{
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    background: #ff3d00 ;
+    color: white;
+}
+tbody tr:nth-child(2n) {
+background: #1e88e5
+}
+tbody tr:nth-child(2n+1) {
+    background: white;
+    }
+
+    tbody td:hover{
+background: black;
+color: white;
+text-align: center;
+
+    }
