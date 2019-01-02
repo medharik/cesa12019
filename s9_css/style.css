@@ -1,0 +1,57 @@
+body{
+    background: rgb(236, 227, 227);
+}
+h1{
+    text-align: center;
+    color: blue;
+    border: 1px solid blue;
+    padding: 10px;
+font-family: 'Charm', cursive;
+clear: both;
+margin-top: 16px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+
+    border:2px solid orange;
+    padding: 16px;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 30px;
+}
+
+p:hover{
+    background: black;
+    color: white;
+}
+p img{
+width: 400px;
+border-radius: 10px;
+float: left;
+margin-right: 16px;
+
+}
+ul{
+    list-style: none;
+}
+ul li{
+    border:2px solid rgb(79, 79, 90);
+    padding: 10px;
+    text-align: center;
+    width: 160px;
+    float: left;
+    
+    background: black;
+   
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul li:hover{
+    background: grey;
+   
+}
+ul li:hover a{
+    color: black;
+}
