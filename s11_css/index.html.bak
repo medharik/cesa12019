@@ -10,10 +10,8 @@
 	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
 	
 	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
-	
-	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
-	<link rel="stylesheet" type="text/css" href="engine2/style.css" />
-	<script type="text/javascript" src="engine2/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section --></head>
 <body>
 
@@ -21,22 +19,20 @@
     <div id="banniere">
         <div id="slider">
 	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-	<div id="wowslider-container2">
+	<div id="wowslider-container1">
 	<div class="ws_images"><ul>
-		<li><a href="http://wowslider.net"><img src="data2/images/startupslider.jpg" alt="image slider" title="REVISION" id="wows2_0"/></a>lorem ipsum</li>
-		<li><img src="data2/images/university.jpg" alt="université" title="université" id="wows2_1"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/startupslider.jpg" alt="jquery slider" title="REVISION" id="wows1_0"/></a>lorem ipsum</li>
+		<li><img src="data1/images/university.jpg" alt="université" title="université" id="wows1_1"/></li>
 	</ul></div>
 	<div class="ws_bullets"><div>
-		<a href="#" title="REVISION"><span><img src="data2/tooltips/startupslider.jpg" alt="REVISION"/>1</span></a>
-		<a href="#" title="université"><span><img src="data2/tooltips/university.jpg" alt="université"/>2</span></a>
+		<a href="#" title="REVISION"><span><img src="data1/tooltips/startupslider.jpg" alt="REVISION"/>1</span></a>
+		<a href="#" title="université"><span><img src="data1/tooltips/university.jpg" alt="université"/>2</span></a>
 	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap image slider</a> by WOWSlider.com v8.8</div>
 	<div class="ws_shadow"></div>
 	</div>	
-	<script type="text/javascript" src="engine2/wowslider.js"></script>
-	<script type="text/javascript" src="engine2/script.js"></script>
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
 	<!-- End WOWSlider.com BODY section -->
-	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-	
 	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
 	</div>
         <div id="photov"></div>
