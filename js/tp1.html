@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tp 1 de js</title>
+</head>
+<body>
+
+  Age :   <input type="number"  id="cage">  
+    <input type="button" value="ok" onclick="tester()" >
+  <p id="resultat"></p>
+  
+  
+
+
+  <script>
+ function tester(){
+ var cage =document.getElementById('cage');
+ var resultat =document.getElementById('resultat');
+if(cage.value<18){
+resultat.innerHTML="MINEUR";
+}else {
+    resultat.innerHTML="MAJEUR";
+}
+
+ }
+
+  </script>
+</body>
+</html>
