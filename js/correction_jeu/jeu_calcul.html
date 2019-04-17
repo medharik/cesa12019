@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="zone1" class="b">
+        <div id="gauche" class="b">
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Nombre 1 :</td>
+                        <td><input autocomplete="off" type="number" name="" id="n1"></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre 2 :</td>
+                        <td><input autocomplete="off" type="number" name="" id="n2"></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Reponse :</td>
+                        <td><input autocomplete="off" type="number" name="" id="rep" onkeyup="corriger()"></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="correction"  onclick="corriger()"></td>
+                    </tr>
+                 
+                 
+                </table>
+
+            </form>
+        </div>
+        <div id="droite" class="b">
+<img src="sad.gif" alt="" width="400" id="tof">
+
+        </div>
+ 
+    </div>
+    <script>
+        function corriger(){
+var n1=document.getElementById('n1');
+var n2=document.getElementById('n2');
+var reponse=document.getElementById('rep').value;
+var tof=document.getElementById('tof');
+tof.style.display='block';
+var produit=n1.value*n2.value;
+
+if(reponse==produit){
+tof.src="happy.gif";
+}
+else{
+    tof.src="sad.gif";
+}
+        }
+
+
+    </script>
+</body>
+</html>
