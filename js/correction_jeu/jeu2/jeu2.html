@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jeu calcul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+
+    <div id="nombre1" class="n">
+1
+    </div>
+
+    <div id="nombre2" class="n">
+3
+    </div>
+    <div  class="n" id="dernier">
+<button class="gbtn" style="background: greenyellow" onclick="alea()">Nouveau</button>  
+<button class="gbtn" style="background: red" onclick="produit()">Correction</button>  
+  
+
+    </div>
+
+</div> 
+
+<div id="resultat">
+
+</div>
+
+<script>
+function alea(){
+var n1 =document.getElementById('nombre1');
+var n2 =document.getElementById('nombre2');
+n1.innerHTML=parseInt(Math.random()*10);
+n2.innerHTML=parseInt(Math.random()*10);
+
+}
+function produit(){
+    var n1 =document.getElementById('nombre1');
+    var n2 =document.getElementById('nombre2');
+    var r =document.getElementById('resultat');
+var p=n1.innerHTML*n2.innerHTML;
+r.innerHTML="le produit est "+p ;
+}
+
+</script>
+</body>
+</html>
