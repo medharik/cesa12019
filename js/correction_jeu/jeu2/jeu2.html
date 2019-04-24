@@ -20,10 +20,13 @@
     <div  class="n" id="dernier">
 <button class="gbtn" style="background: greenyellow" onclick="alea()">Nouveau</button>  
 <button class="gbtn" style="background: red" onclick="produit()">Correction</button>  
-  
+  <input onchange="reponse()" type="text" id="rep" class="gbtn" style="height: 30%;font-size: 3em;">
 
     </div>
+<div id="tof">
+<img id="toff" src="happy.gif" alt="">
 
+</div>
 </div> 
 
 <div id="resultat">
@@ -44,6 +47,22 @@ function produit(){
     var r =document.getElementById('resultat');
 var p=n1.innerHTML*n2.innerHTML;
 r.innerHTML="le produit est "+p ;
+}
+
+function reponse(){
+    var n1 =document.getElementById('nombre1');
+    var n2 =document.getElementById('nombre2');
+    var rep =document.getElementById('rep');
+    var tof =document.getElementById('toff');
+  
+    var p=n1.innerHTML*n2.innerHTML;
+if(rep.value==p){
+tof.src="happy.gif";
+}else{
+    tof.src="sad.gif";
+
+}
+
 }
 
 </script>
