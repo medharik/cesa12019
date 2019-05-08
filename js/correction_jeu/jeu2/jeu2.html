@@ -34,7 +34,10 @@
 </div>
 
 <script>
+var essai=3;
+
 function alea(){
+
 var n1 =document.getElementById('nombre1');
 var n2 =document.getElementById('nombre2');
 n1.innerHTML=parseInt(Math.random()*10);
@@ -58,12 +61,24 @@ function reponse(){
     var p=n1.innerHTML*n2.innerHTML;
 if(rep.value==p){
 tof.src="happy.gif";
+score =essai
+alert("SCORE EST : "+score+"/3")
+
+essai=3
+
 }else{
     tof.src="sad.gif";
 
+essai -= 1;
+alert("il vous reste "+essai+" essai(s)");
+if(essai==0){
+    window.location="https://livre.fnac.com/a10826996/Pour-les-Nuls-2eme-edition-Les-maths-Pour-les-Nuls-Jean-Louis-Boursin";
+}
 }
 
 }
+
+
 
 </script>
 </body>
