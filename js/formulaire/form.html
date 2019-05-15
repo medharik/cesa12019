@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inscription en ligne </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="contenu">
+
+<form id="fo">
+    <table align="center">
+        <caption align="bottom">Tous les champs * sont requis</caption>
+        <tr>
+            <td><label for="nom">Nom (*):</label>
+            </td>
+            <td><input required type="text" name="nom" id="nom" placeholder="Entrer votre nom"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email (*):</label>
+            </td>
+            <td><input type="text" name="email" id="email" placeholder="Entrer votre email"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+<button type="button" onclick="valider()    ">Valider</button>
+
+            </td>
+        </tr>
+    </table>
+
+<div id="erreur">
+
+</div>
+</form>
+
+    </div>
+
+
+    <script>
+probleme=false
+message=""
+function valider(){
+   var  nom= document.getElementById('nom');
+   var  email= document.getElementById('email');
+   var  fo= document.getElementById('fo');
+   var  erreur= document.getElementById('erreur');
+   if(nom.value==""){
+//alert("le nom est requis");
+message +="Le nom est requis<br>";
+probleme=true
+}
+if(email.value==""){
+    //  alert("Email est requis");
+    probleme=true
+    message +="L'email est requis<br>";
+
+   }
+   if(message!=""){
+erreur.innerHTML=message
+message=""
+   }
+   if(!probleme){
+//window.location="https://www.google.com/search?ei=0xncXM2vD7iy1fAP-o6M4Ao&q="+nom.value;
+fo.action="http://eurosport.fr";  
+fo.submit();
+}
+}
+
+    </script>
+</body>
+</html>
